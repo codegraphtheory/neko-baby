@@ -2,6 +2,10 @@
 
 A maximum-kawaii neko Hermes Agent profile with candy-pink catgirl energy, bow-loaded terminal styling, nyan spinner motion, chibi mascot polish, and ship-ready command-parlor discipline.
 
+![Neko Baby live terminal demo](assets/demos/neko-baby-terminal-demo.gif)
+
+Live compact startup with Comic Mono, the chibi pet pane, pink neko prompt, status bar, and Neko Baby flavor.
+
 Template lineage: built from [codegraphtheory/hermes-profile-template](https://github.com/codegraphtheory/hermes-profile-template).
 
 ## Install
@@ -50,13 +54,7 @@ This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko m
 
 ## Terminal demo
 
-A VHS-recorded terminal demo is available at:
-
-```text
-assets/demos/neko-baby-terminal-demo.gif
-```
-
-The recording is a live `neko-baby chat` startup, not a scripted mock. It shows the actual compact Hermes banner, welcome copy, live pet pane, status bar, and prompt.
+The topline GIF above is a VHS recording of a live `neko-baby chat` startup, not a scripted mock. It shows the actual compact Hermes banner, welcome copy, live pet pane, status bar, and prompt.
 
 Regenerate it with:
 
