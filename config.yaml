@@ -2,23 +2,24 @@ model:
   provider: openrouter
   model: anthropic/claude-sonnet-4
 toolsets:
-  - file
-  - terminal
-  - skills
-  - web
-  - session_search
-  - clarify
-  - todo
+- file
+- terminal
+- skills
+- web
+- session_search
+- clarify
+- todo
 agent:
   max_turns: 90
   tool_use_enforcement: true
 terminal:
   backend: local
-  cwd: "."
+  cwd: .
 compression:
   enabled: true
 display:
   tool_progress: true
+  skin: neko-baby
 memory:
   memory_enabled: true
   user_profile_enabled: true

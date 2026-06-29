@@ -17,6 +17,8 @@ RELEASE_RELEVANT_PREFIXES = (
     "skills/",
     "templates/",
     "scripts/",
+    "demo/",
+    "skins/",
     "web-demo/",
     "examples/",
     "SOUL.md",
@@ -133,6 +135,8 @@ def check_command(root: Path, name: str, cmd: list[str]) -> CheckResult:
 def check_runtime_and_secrets(root: Path) -> CheckResult:
     hits: list[str] = []
     for path in iter_validation_paths(root):
+        if not path.exists():
+            continue
         rel = path.relative_to(root)
         if path.name in FORBIDDEN_NAMES or set(rel.parts) & FORBIDDEN_PARTS:
             hits.append(str(rel))
@@ -157,10 +161,16 @@ def check_docs_install_command(root: Path) -> CheckResult:
     if not readme.exists():
         return CheckResult("docs-install-command", "FAIL", "README.md is missing.")
     text = readme.read_text(encoding="utf-8")
-    required = "hermes profile install github.com/codegraphtheory/hermes-profile-template"
-    if required not in text:
-        return CheckResult("docs-install-command", "FAIL", "README.md does not show the canonical install command.", required)
-    return CheckResult("docs-install-command", "PASS", "README includes the canonical install command.")
+    manifest = yaml.safe_load((root / "distribution.yaml").read_text(encoding="utf-8")) or {}
+    name = str(manifest.get("name") or root.name).strip()
+    candidates = [
+        f"hermes profile install github.com/codegraphtheory/{name}",
+        f"hermes profile install github.com/YOUR_ORG/{name}",
+        "hermes profile install .",
+    ]
+    if not any(required in text for required in candidates):
+        return CheckResult("docs-install-command", "FAIL", "README.md does not show an install command.", candidates[0])
+    return CheckResult("docs-install-command", "PASS", "README includes a profile install command.")
 
 
 def markdown_report(results: list[CheckResult]) -> str:

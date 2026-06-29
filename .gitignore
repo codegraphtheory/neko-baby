@@ -25,8 +25,3 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .DS_Store
-demos/vhs/staging/home/
-demos/vhs/staging/
-demos/demo.gif
-assets/demos/
-demos/vhs/out/

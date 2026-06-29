@@ -1,19 +1,14 @@
-description: Prompt-to-repo authoring system with one-sentence generation, demo assets, diagrams, and installable Hermes Agent profile distributions.
-homepage: https://github.com/codegraphtheory/hermes-profile-template
+description: Kawaii neko Hermes Agent profile with pink catgirl energy, nyan motion,
+  accessible visuals, and real verification discipline.
+homepage: https://github.com/codegraphtheory/neko-baby
 topics:
-  - agent-profile
-  - agent-skills
-  - ai-agents
-  - automation
-  - cli
-  - developer-tools
-  - github-template
-  - hermes-agent
-  - profile-distribution
-  - profile-template
-  - prompt-to-repo
-  - python
-  - starter-kit
-  - template
-  - validation
-  - workflow-automation
+- hermes-agent
+- ai-agents
+- agent-profile
+- profile-distribution
+- kawaii
+- neko
+- catgirl
+- terminal-theme
+- pink
+- accessible-design
