@@ -2,6 +2,12 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.3
+
+- Set the installed profile default model provider to Hermes `openai-codex` with `gpt-5.5` and the Codex backend base URL.
+- Added a cuter browser demo font stack with `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded` before falling back to the previous defaults.
+- Strengthened smoke install checks to verify the Codex model configuration alongside skin activation.
+
 ## 0.1.2
 
 - Increased the kawaii intensity with stronger pink terminal colors, bow-and-heart branding, richer nyan spinner phrases, and more visible banner art.

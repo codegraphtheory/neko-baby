@@ -53,6 +53,11 @@ HERMES_HOME="$HERMES_HOME/profiles/neko-baby" "$hermes_python" - <<'PY'
 from hermes_cli.config import load_config
 from hermes_cli.skin_engine import init_skin_from_config, get_active_skin
 cfg = load_config()
+model = cfg.get('model') or {}
+assert model.get('provider') == 'openai-codex', model
+assert model.get('default') == 'gpt-5.5', model
+assert model.get('model') == 'gpt-5.5', model
+assert model.get('base_url') == 'https://chatgpt.com/backend-api/codex', model
 init_skin_from_config(cfg)
 skin = get_active_skin()
 assert skin.name == 'neko-baby', skin.name

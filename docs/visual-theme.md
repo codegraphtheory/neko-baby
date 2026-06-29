@@ -26,6 +26,12 @@ Level 3: full theme. Use obvious bows, paw pads, hearts, strawberry-milk pink, c
 | `--neko-sky` | `#95dcff` | Nyan rainbow accent |
 | `--neko-butter` | `#fff09a` | Stars and highlights |
 
+## Typography
+
+Use a cute rounded font stack for browser artifacts: `Comic Neue`, `Baloo 2`, `Nunito`, `SF Pro Rounded`, then the existing fallback stack `Inter`, `ui-rounded`, `ui-sans-serif`, `system-ui`, `sans-serif`. For terminal previews, try `Comic Code` or `Fira Code` before standard monospace fallbacks. Do not depend on external font downloads for the self-contained demo.
+
+Hermes CLI skins do not set the terminal emulator font directly. The profile can document the desired font vibe, but the user's terminal app controls the actual live font.
+
 ## Motifs
 
 - Cat ears for hero cards and logo frames.

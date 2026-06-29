@@ -38,6 +38,10 @@ The profile still works without the shorthand:
 hermes -p neko-baby chat
 ```
 
+## Default model
+
+Neko Baby defaults to OpenAI Codex via Hermes provider `openai-codex` with model `gpt-5.5` and base URL `https://chatgpt.com/backend-api/codex`. Users can still override the model after install through their Hermes config.
+
 ## Kawaii intensity
 
 This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko mascot energy, bow and heart copy, paw-check language, nyan spinner phrases, pink terminal chrome, and a self-contained animated demo. Cute is allowed to be loud here, but proof and accessibility still win.
@@ -71,6 +75,10 @@ The mature prompt used to generate and refine this profile is preserved in:
 ```text
 docs/profile-prompt.md
 ```
+
+## Font stack
+
+The web demo asks for a cuter rounded stack first: `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are not installed, it falls back to the previous defaults: Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Hermes terminal skins cannot force your terminal emulator font, so set your terminal app to a cute Nerd Font or rounded font if you want the live CLI to match the demo.
 
 ## Visual demo
 
