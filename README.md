@@ -46,6 +46,12 @@ Neko Baby defaults to OpenAI Codex via Hermes provider `openai-codex` with model
 
 This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko mascot energy, bow and heart copy, paw-check language, nyan spinner phrases, pink terminal chrome, and a self-contained animated demo. Cute is allowed to be loud here, but proof and accessibility still win.
 
+## Focused catgirl TUI
+
+Neko Baby now ships a profile-local Petdex mascot at `pets/neko-baby/` and enables it through `display.pet`. In the Hermes CLI this reflows the bottom TUI into a focused catgirl view: a live pink chibi neko sprite sits above the prompt, reacts while the agent thinks, waits, reviews, succeeds, or fails, and keeps the main input area visually anchored to the Neko Baby theme instead of a stock Hermes prompt.
+
+The profile still uses standard Hermes runtime code for safety and compatibility. Arbitrary panes and full custom terminal layouts require Hermes core support, but this profile uses the supported profile-local skin and pet surfaces so installs remain portable.
+
 ## Skin behavior
 
 The profile config sets `display.skin: neko-baby`, and the skin file is installed at `skins/neko-baby.yaml` inside the Hermes profile. The skin uses Hermes CLI's real skin schema: banner colors, prompt symbol, spinner faces, response label, status bar colors, tool prefix, tool emojis, and banner art. It cannot force your terminal app's window background color, but the Hermes banner, prompt, status bar, spinner, response box, and command UI should be visibly pink neko themed.
@@ -59,6 +65,7 @@ Neko Baby is a pink, girly, animated, nyan, ultra-kawaii profile for making agen
 - `docs/visual-theme.md` with tokens, animation rules, microcopy, and accessibility checks.
 - `demo/index.html` with a self-contained animated pink neko preview.
 - `skins/neko-baby.yaml` with a candy-pink terminal palette for Hermes skins where supported.
+- `pets/neko-baby/` with a chibi catgirl Petdex spritesheet for the focused TUI mascot pane.
 
 ## Use it for
 

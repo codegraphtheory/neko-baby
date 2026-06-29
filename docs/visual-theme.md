@@ -88,6 +88,19 @@ PY
 ```
 
 
+## Focused TUI layout
+
+The installed profile enables `display.pet` with the bundled `neko-baby` pet. Hermes renders this as a live half-block sprite above the prompt in the CLI TUI. Use this as the supported profile-level reflow: the mascot pane provides a focused catgirl workbench without patching Hermes core.
+
+Pet states map to work states:
+
+- Idle: calm chibi neko with hearts.
+- Thinking/running: paw motion and tail motion.
+- Waiting: soft hearts while the user needs to answer.
+- Review: tiny checklist panel.
+- Failed: sad face and recovery posture.
+- Done: jump or wave reaction.
+
 ## Hermes CLI skin mapping
 
 The actual terminal skin lives at `skins/neko-baby.yaml` and uses Hermes CLI skin keys, not generic terminal color keys. Important fields:

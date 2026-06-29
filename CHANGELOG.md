@@ -2,6 +2,12 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.4
+
+- Added a bundled `pets/neko-baby` chibi catgirl Petdex spritesheet and enabled `display.pet` for a focused Neko Baby TUI mascot pane above the prompt.
+- Documented the supported profile-level TUI reflow and mapped mascot states to agent work states.
+- Strengthened smoke install checks to verify the pet asset installs and renders through Hermes pet tooling.
+
 ## 0.1.3
 
 - Set the installed profile default model provider to Hermes `openai-codex` with `gpt-5.5` and the Codex backend base URL.

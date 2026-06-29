@@ -25,6 +25,8 @@ ln -sf "$hermes_bin" "$smoke_root/bin/hermes"
 test -f "$HERMES_HOME/profiles/neko-baby/SOUL.md"
 test -f "$HERMES_HOME/profiles/neko-baby/distribution.yaml"
 test -f "$HERMES_HOME/profiles/neko-baby/skins/neko-baby.yaml"
+test -f "$HERMES_HOME/profiles/neko-baby/pets/neko-baby/pet.json"
+test -f "$HERMES_HOME/profiles/neko-baby/pets/neko-baby/spritesheet.webp"
 test -x "$HOME/.local/bin/neko-baby"
 
 neko-baby profile >/tmp/neko-baby-alias-smoke.out
@@ -58,6 +60,16 @@ assert model.get('provider') == 'openai-codex', model
 assert model.get('default') == 'gpt-5.5', model
 assert model.get('model') == 'gpt-5.5', model
 assert model.get('base_url') == 'https://chatgpt.com/backend-api/codex', model
+pet_cfg = ((cfg.get('display') or {}).get('pet') or {})
+assert pet_cfg.get('enabled') is True, pet_cfg
+assert pet_cfg.get('slug') == 'neko-baby', pet_cfg
+from agent.pet import store
+from agent.pet.render import PetRenderer
+pet = store.resolve_active_pet('neko-baby')
+assert pet is not None and pet.exists, pet
+renderer = PetRenderer(str(pet.spritesheet), mode='unicode', scale=0.62, unicode_cols=24)
+assert renderer.frame_count('idle') >= 1
+assert renderer.frame_count('run') >= 1
 init_skin_from_config(cfg)
 skin = get_active_skin()
 assert skin.name == 'neko-baby', skin.name

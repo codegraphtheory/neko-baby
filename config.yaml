@@ -22,6 +22,12 @@ compression:
 display:
   tool_progress: true
   skin: neko-baby
+  pet:
+    enabled: true
+    slug: neko-baby
+    scale: 0.62
+    unicode_cols: 24
+    render_mode: auto
 memory:
   memory_enabled: true
   user_profile_enabled: true
