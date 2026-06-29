@@ -2,6 +2,22 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.8
+
+- Added a profile-specific `neko-baby` launcher that applies Comic Mono only while the Neko Baby profile is running, then restores the previous Terminal.app font.
+- Switched the live terminal font target to monospaced Comic Mono so spacing and columns stay aligned.
+- Updated font install and troubleshooting docs to keep font behavior restricted to the Neko Baby profile.
+
+## 0.1.7
+
+- Switched the live Terminal.app font helper default from `Cherry Bomb One` to the softer, more readable `Gaegu` at 16pt after real terminal testing showed Cherry Bomb One was too bold.
+- Documented how to opt into the bolder headline font and how to switch back to the softer default.
+
+## 0.1.6
+
+- Added `scripts/apply_terminal_font.sh` to apply the super-cute `Cherry Bomb One` font to the active macOS Terminal.app tab or all open tabs.
+- Updated install and troubleshooting docs so users know font installation alone does not change an already-open terminal emulator font.
+
 ## 0.1.5
 
 - Reworked public copy to sound confident, plush, and welcoming instead of defensive.

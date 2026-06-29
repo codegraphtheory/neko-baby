@@ -7,6 +7,9 @@ cd "$root"
 python3 scripts/validate_profile.py .
 PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile scripts/*.py
 bash -n scripts/install_fonts.sh
+bash -n scripts/apply_terminal_font.sh
+bash -n scripts/neko-baby
+bash -n scripts/install_launcher.sh
 scripts/install_fonts.sh --check >/tmp/neko-baby-font-check.out 2>&1 || true
 
 if ! command -v hermes >/dev/null 2>&1; then

@@ -9,6 +9,7 @@ Template lineage: built from [codegraphtheory/hermes-profile-template](https://g
 ```bash
 hermes profile install github.com/codegraphtheory/neko-baby --alias --yes
 ~/.hermes/profiles/neko-baby/scripts/install_fonts.sh || true
+~/.hermes/profiles/neko-baby/scripts/install_launcher.sh || true
 neko-baby chat
 ```
 
@@ -86,7 +87,41 @@ docs/profile-prompt.md
 
 ## Font stack
 
-The web demo asks for a much cuter stack first: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are missing, it falls back to Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Run `scripts/install_fonts.sh` after install to add the cute font pack on macOS with Homebrew. Hermes terminal skins cannot force your terminal emulator font, so set your terminal app to one of the installed cute fonts if you want the live CLI to match the demo.
+The web demo asks for a much cuter stack first: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are missing, it falls back to Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Run `scripts/install_fonts.sh` after install to add the cute font pack on macOS with Homebrew. To make the live macOS Terminal.app tab visibly cute without breaking terminal columns, run `scripts/install_launcher.sh`. It replaces only the `neko-baby` launcher with a profile-specific wrapper that switches the active tab to `Comic Mono` at 14pt while Neko Baby runs, then restores your previous Terminal.app font on exit. Other Hermes profiles and normal terminal sessions keep their own font. Hermes skins color and label the TUI, but Terminal.app owns the actual glyph font.
+
+## Terminal font troubleshooting
+
+If Neko Baby still looks like a normal terminal, the font script probably installed fonts but did not change the active terminal tab. Check with:
+
+```bash
+osascript -e 'tell application "Terminal" to get font name of selected tab of front window'
+```
+
+Install the profile-specific launcher:
+
+```bash
+~/.hermes/profiles/neko-baby/scripts/install_launcher.sh
+```
+
+Then start Neko Baby normally:
+
+```bash
+neko-baby chat
+```
+
+The launcher applies `Comic Mono` only for the `neko-baby` process and restores the previous Terminal.app font when that process exits.
+
+Want a bolder headline-style font anyway? Use:
+
+```bash
+NEKO_BABY_TERMINAL_FONT="Cherry Bomb One" NEKO_BABY_TERMINAL_FONT_SIZE=15 ~/.hermes/profiles/neko-baby/scripts/apply_terminal_font.sh --current
+```
+
+If that is too heavy, return to the aligned cute default with:
+
+```bash
+NEKO_BABY_TERMINAL_FONT="Comic Mono" NEKO_BABY_TERMINAL_FONT_SIZE=14 ~/.hermes/profiles/neko-baby/scripts/apply_terminal_font.sh --current
+```
 
 ## Visual demo
 

@@ -6,6 +6,7 @@ fonts=(
   font-sniglet
   font-gaegu
   font-delius
+  font-comic-mono
   font-comic-neue
   font-baloo-2
 )
@@ -15,6 +16,7 @@ families=(
   "Sniglet"
   "Gaegu"
   "Delius"
+  "Comic Mono"
   "Comic Neue"
   "Baloo 2"
 )
