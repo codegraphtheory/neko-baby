@@ -57,9 +57,11 @@ init_skin_from_config(cfg)
 skin = get_active_skin()
 assert skin.name == 'neko-baby', skin.name
 assert skin.get_branding('agent_name') == 'Neko Baby'
-assert skin.get_branding('prompt_symbol') == 'ฅ'
-assert skin.get_color('banner_border') == '#ff3fa4'
+assert skin.get_branding('prompt_symbol') == '♡ฅ'
+assert skin.get_color('banner_border') == '#ff4fb8'
 assert skin.banner_logo and skin.banner_hero
+assert 'strawberry milk' in skin.banner_logo
+assert 'pink paws' in skin.banner_hero
 print('Skin activation smoke passed: neko-baby')
 PY
 

@@ -1,6 +1,6 @@
 # Neko Baby
 
-A kawaii neko Hermes Agent profile with over-the-top pink catgirl energy, nyan-flavored guidance, animated visual polish, and real verification discipline.
+A maximum-kawaii neko Hermes Agent profile with candy-pink catgirl energy, bow-loaded terminal styling, nyan spinner motion, chibi mascot polish, and real verification discipline.
 
 Template lineage: built from [codegraphtheory/hermes-profile-template](https://github.com/codegraphtheory/hermes-profile-template).
 
@@ -38,13 +38,17 @@ The profile still works without the shorthand:
 hermes -p neko-baby chat
 ```
 
+## Kawaii intensity
+
+This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko mascot energy, bow and heart copy, paw-check language, nyan spinner phrases, pink terminal chrome, and a self-contained animated demo. Cute is allowed to be loud here, but proof and accessibility still win.
+
 ## Skin behavior
 
 The profile config sets `display.skin: neko-baby`, and the skin file is installed at `skins/neko-baby.yaml` inside the Hermes profile. The skin uses Hermes CLI's real skin schema: banner colors, prompt symbol, spinner faces, response label, status bar colors, tool prefix, tool emojis, and banner art. It cannot force your terminal app's window background color, but the Hermes banner, prompt, status bar, spinner, response box, and command UI should be visibly pink neko themed.
 
 ## What it is
 
-Neko Baby is a pink, girly, animated, nyan, kawaii profile for making agent work feel visually memorable without sacrificing correctness. It ships:
+Neko Baby is a pink, girly, animated, nyan, ultra-kawaii profile for making agent work feel like a strawberry-milk catgirl command parlor without sacrificing correctness. It ships:
 
 - `SOUL.md` with the full neko identity and safety boundaries.
 - `skills/neko-visual-polish/SKILL.md` for applying the theme to docs, terminal skins, and HTML artifacts.

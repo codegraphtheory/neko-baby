@@ -6,6 +6,10 @@ This profile uses a cute, accessible, over-the-top pink neko visual system for d
 
 This theme helps builders feel like they are working inside a candy-pink neko control room while still being able to read, click, validate, and ship.
 
+## Kawaii intensity target
+
+Level 3: full theme. Use obvious bows, paw pads, hearts, strawberry-milk pink, chibi mascot cues, nyan rainbow trails, cute terminal labels, and animated sparkle energy. Keep controls readable, avoid explicit content, and preserve reduced-motion support.
+
 ## Palette
 
 | Token | Hex | Use |
@@ -29,7 +33,7 @@ This theme helps builders feel like they are working inside a candy-pink neko co
 - Bows for labels and badges.
 - Whisker dividers for section breaks.
 - Rainbow trails for progress and success.
-- Floating hearts, pixel stars, yarn loops, bells, and sparkle dust as background art.
+- Floating hearts, pixel stars, yarn loops, bells, lace borders, plush cards, strawberry-milk badges, and sparkle dust as background art.
 
 ## Animation rules
 
@@ -42,8 +46,8 @@ This theme helps builders feel like they are working inside a candy-pink neko co
 
 ## Agent microcopy examples
 
-- `Purrfect. Validation passed.`
-- `Nyan trail complete. The repo is installable.`
+- `Purrfect. Validation passed. Pink paws approved.`
+- `Nyan trail complete. The repo is installable and the bow is tied.`
 - `The kitten found one contrast issue.`
 - `Paw-check the smoke install before release.`
 
