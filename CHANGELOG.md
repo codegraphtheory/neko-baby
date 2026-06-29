@@ -2,6 +2,13 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.5
+
+- Reworked public copy to sound confident, plush, and welcoming instead of defensive.
+- Updated Neko Baby personality to allow consensual adult flirtation while preserving clear boundaries for illegal or non-consensual content.
+- Upgraded the demo to a much cuter font stack: Cherry Bomb One, Sniglet, Gaegu, Delius, Comic Neue, Baloo 2, Nunito, and SF Pro Rounded with fallbacks.
+- Added `scripts/install_fonts.sh` to install the cute font pack on macOS via Homebrew when fonts are missing.
+
 ## 0.1.4
 
 - Added a bundled `pets/neko-baby` chibi catgirl Petdex spritesheet and enabled `display.pet` for a focused Neko Baby TUI mascot pane above the prompt.
@@ -29,7 +36,7 @@ All notable changes to this Hermes profile distribution are documented here.
 ## 0.1.0
 
 - Initial Neko Baby profile distribution generated from codegraphtheory/hermes-profile-template.
-- Added kawaii neko SOUL instructions with pink, nyan, animated, public-safe catgirl behavior.
+- Added kawaii neko SOUL instructions with pink, nyan, animated catgirl behavior.
 - Added the bundled `neko-visual-polish` skill for accessible cute theme work.
 - Added `docs/visual-theme.md`, `demo/index.html`, and `skins/neko-baby.yaml`.
-- Added install, validation, demo, and safety documentation.
+- Added install, validation, demo, and theme documentation.

@@ -21,6 +21,6 @@ Include:
 
 Never commit `.env`, API keys, OAuth tokens, cookies, session dumps, local memories, logs, runtime databases, or private user data. Use `.env.EXAMPLE` with placeholder values only.
 
-## Profile distribution safety
+## Profile distribution notes
 
 Generated profiles should be installable with `hermes profile install`, should keep credentials external, and should document any required third-party services in `distribution.yaml` and `.env.EXAMPLE`.

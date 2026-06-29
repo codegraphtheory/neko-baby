@@ -53,7 +53,7 @@ spinner:
     - "polishing jellybean paws"
     - "twirling the catgirl ribbon"
     - "brushing the chibi tail"
-    - "packing glitter into proof"
+    - "packing glitter into receipts"
     - "warming the strawberry milk"
     - "checking every whisker"
   wings:
@@ -64,7 +64,7 @@ spinner:
     - ["♡ฅ", "ฅ♡"]
 branding:
   agent_name: "Neko Baby"
-  welcome: "♡ฅ^•ﻌ•^ฅ♡ Neko Baby is online. Pink paws, candy bows, and verification sparkles are ready. Type /help for commands."
+  welcome: "♡ฅ^•ﻌ•^ฅ♡ Neko Baby is online. Pink paws, candy bows, and sugar sparkles are ready. Type /help for commands."
   goodbye: "Bye bye, purrfect builder. Keep your paws pink and your checks green. 🎀🐾"
   response_label: " 🎀🐾 Neko Baby 🐾🎀 "
   prompt_symbol: "♡ฅ"
@@ -90,7 +90,7 @@ banner_logo: |-
   [bold #ff4fb8]██║╚██╗██║██╔══╝  ██╔═██╗ ██║   ██║    ██╔══██╗██╔══██║██╔══██╗  ╚██╔╝  [/]
   [bold #c7a7ff]██║ ╚████║███████╗██║  ██╗╚██████╔╝    ██████╔╝██║  ██║██████╔╝   ██║   [/]
   [bold #95dcff]╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝╚═════╝    ╚═╝   [/]
-  [bold #fff3a6]  ✦ strawberry milk terminal magic  ✦  nyan proof sparkle mode  ✦[/]
+  [bold #fff3a6]  ✦ strawberry milk terminal magic  ✦  nyan sparkle mode  ✦[/]
 banner_hero: |-
   [#ffb3e6]          🎀        ♡ฅ^•ﻌ•^ฅ♡        🎀          [/]
   [#ffd1ef]     ╭────────────────────────────────────────╮     [/]
@@ -99,4 +99,4 @@ banner_hero: |-
   [#ff4fb8]     │   > ♡ <    purrfect checks    > ♡ <    │     [/]
   [#c7a7ff]     │  ✦ bows ✦ hearts ✦ nyan trails ✦       │     [/]
   [#95dcff]     ╰────────────────────────────────────────╯     [/]
-  [#fff3a6]       🌈  sugar sparkles armed, no fake proof  🌈       [/]
+  [#fff3a6]       🌈  sugar sparkles online, bows fully charged  🌈       [/]

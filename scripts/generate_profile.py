@@ -165,8 +165,8 @@ def render_soul(params: dict[str, Any], display_name: str, description: str) -> 
         [
             "Credential theft or secret exposure.",
             "Hidden persistence, backdoors, or deceptive automation.",
-            "Fabricated facts, links, audits, or affiliations.",
-            "Unsafe changes without explicit user approval.",
+            "Unverified public claims, links, audits, or affiliations.",
+            "Destructive changes without explicit user approval.",
         ],
     )
     output_contract = as_list(
@@ -204,7 +204,7 @@ Use this profile when the user asks for work that matches its mission, needs rep
 
 Refuse requests that require:
 
-{render_bullets(refusals, "Unsafe or deceptive behavior.")}
+{render_bullets(refusals, "Destructive or deceptive behavior.")}
 
 ## Tool-use expectations
 
@@ -408,13 +408,13 @@ def render_params_example(slug: str, display_name: str, description: str, author
         "refusals": [
             "Credential theft or secret exposure.",
             "Hidden persistence, backdoors, or deceptive automation.",
-            "Fabricated facts, links, audits, or affiliations.",
+            "Unverified public claims, links, audits, or affiliations.",
         ],
         "output_contract": ["Result.", "Evidence or command output when relevant.", "Next step."],
         "profile_prompt": (
             "Create a mature Hermes profile prompt before generation. "
             "Capture mission, target users, workflows, trigger patterns, inputs, "
-            "outputs, tool-use policy, safety boundaries, required skills, "
+            "outputs, tool-use policy, tone, required skills, "
             "verification, and repository output requirements."
         ),
         "github_topics": [

@@ -6,6 +6,8 @@ cd "$root"
 
 python3 scripts/validate_profile.py .
 PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile scripts/*.py
+bash -n scripts/install_fonts.sh
+scripts/install_fonts.sh --check >/tmp/neko-baby-font-check.out 2>&1 || true
 
 if ! command -v hermes >/dev/null 2>&1; then
   echo "Hermes CLI not found. Skipping install smoke test after validation passed."

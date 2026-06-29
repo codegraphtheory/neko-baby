@@ -1,6 +1,6 @@
 # Neko Baby
 
-A maximum-kawaii neko Hermes Agent profile with candy-pink catgirl energy, bow-loaded terminal styling, nyan spinner motion, chibi mascot polish, and real verification discipline.
+A maximum-kawaii neko Hermes Agent profile with candy-pink catgirl energy, bow-loaded terminal styling, nyan spinner motion, chibi mascot polish, and ship-ready command-parlor discipline.
 
 Template lineage: built from [codegraphtheory/hermes-profile-template](https://github.com/codegraphtheory/hermes-profile-template).
 
@@ -8,6 +8,7 @@ Template lineage: built from [codegraphtheory/hermes-profile-template](https://g
 
 ```bash
 hermes profile install github.com/codegraphtheory/neko-baby --alias --yes
+~/.hermes/profiles/neko-baby/scripts/install_fonts.sh || true
 neko-baby chat
 ```
 
@@ -44,13 +45,13 @@ Neko Baby defaults to OpenAI Codex via Hermes provider `openai-codex` with model
 
 ## Kawaii intensity
 
-This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko mascot energy, bow and heart copy, paw-check language, nyan spinner phrases, pink terminal chrome, and a self-contained animated demo. Cute is allowed to be loud here, but proof and accessibility still win.
+This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko mascot energy, bow and heart copy, paw-check language, nyan spinner phrases, pink terminal chrome, and a self-contained animated demo. Cute is allowed to be loud here: bows, hearts, plush mascot motion, and pink terminal chrome are the point.
 
 ## Focused catgirl TUI
 
 Neko Baby now ships a profile-local Petdex mascot at `pets/neko-baby/` and enables it through `display.pet`. In the Hermes CLI this reflows the bottom TUI into a focused catgirl view: a live pink chibi neko sprite sits above the prompt, reacts while the agent thinks, waits, reviews, succeeds, or fails, and keeps the main input area visually anchored to the Neko Baby theme instead of a stock Hermes prompt.
 
-The profile still uses standard Hermes runtime code for safety and compatibility. Arbitrary panes and full custom terminal layouts require Hermes core support, but this profile uses the supported profile-local skin and pet surfaces so installs remain portable.
+The profile still uses standard Hermes runtime code for compatibility. Arbitrary panes and full custom terminal layouts require Hermes core support, but this profile uses the supported profile-local skin and pet surfaces so installs remain portable.
 
 ## Skin behavior
 
@@ -60,7 +61,7 @@ The profile config sets `display.skin: neko-baby`, and the skin file is installe
 
 Neko Baby is a pink, girly, animated, nyan, ultra-kawaii profile for making agent work feel like a strawberry-milk catgirl command parlor without sacrificing correctness. It ships:
 
-- `SOUL.md` with the full neko identity and safety boundaries.
+- `SOUL.md` with the full neko identity, tone, and operating style.
 - `skills/neko-visual-polish/SKILL.md` for applying the theme to docs, terminal skins, and HTML artifacts.
 - `docs/visual-theme.md` with tokens, animation rules, microcopy, and accessibility checks.
 - `demo/index.html` with a self-contained animated pink neko preview.
@@ -72,8 +73,8 @@ Neko Baby is a pink, girly, animated, nyan, ultra-kawaii profile for making agen
 - Kawaii neko profile behavior.
 - Pink animated docs and HTML prototypes.
 - Cute but accessible terminal and web theme assets.
-- Nyan microcopy that still gives exact verification output.
-- Public-safe catgirl personality without explicit content.
+- Nyan microcopy that still gives exact command output.
+- Flirty adult catgirl personality when the user wants that vibe.
 
 ## Design prompt
 
@@ -85,7 +86,7 @@ docs/profile-prompt.md
 
 ## Font stack
 
-The web demo asks for a cuter rounded stack first: `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are not installed, it falls back to the previous defaults: Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Hermes terminal skins cannot force your terminal emulator font, so set your terminal app to a cute Nerd Font or rounded font if you want the live CLI to match the demo.
+The web demo asks for a much cuter stack first: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are missing, it falls back to Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Run `scripts/install_fonts.sh` after install to add the cute font pack on macOS with Homebrew. Hermes terminal skins cannot force your terminal emulator font, so set your terminal app to one of the installed cute fonts if you want the live CLI to match the demo.
 
 ## Visual demo
 
@@ -118,10 +119,6 @@ raise SystemExit(0 if all(checks.values()) else 1)
 PY
 hermes profile install . --name neko-baby-local --yes --force
 ```
-
-## Safety
-
-Cute does not mean unsafe. This profile refuses sexualized minors, explicit catgirl framing, credential theft, hidden persistence, fabricated proof, fake affiliations, accessibility-hostile flashing, and unreadable pastel UI.
 
 ## Release discipline
 

@@ -8,7 +8,7 @@ This theme helps builders feel like they are working inside a candy-pink neko co
 
 ## Kawaii intensity target
 
-Level 3: full theme. Use obvious bows, paw pads, hearts, strawberry-milk pink, chibi mascot cues, nyan rainbow trails, cute terminal labels, and animated sparkle energy. Keep controls readable, avoid explicit content, and preserve reduced-motion support.
+Level 3: full theme. Use obvious bows, paw pads, hearts, strawberry-milk pink, chibi mascot cues, nyan rainbow trails, cute terminal labels, and animated sparkle energy. Keep controls readable and preserve reduced-motion support.
 
 ## Palette
 
@@ -28,7 +28,7 @@ Level 3: full theme. Use obvious bows, paw pads, hearts, strawberry-milk pink, c
 
 ## Typography
 
-Use a cute rounded font stack for browser artifacts: `Comic Neue`, `Baloo 2`, `Nunito`, `SF Pro Rounded`, then the existing fallback stack `Inter`, `ui-rounded`, `ui-sans-serif`, `system-ui`, `sans-serif`. For terminal previews, try `Comic Code` or `Fira Code` before standard monospace fallbacks. Do not depend on external font downloads for the self-contained demo.
+Use a very cute rounded display stack for browser artifacts: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, `SF Pro Rounded`, then the fallback stack `Inter`, `ui-rounded`, `ui-sans-serif`, `system-ui`, `sans-serif`. For terminal previews, try `Comic Neue`, `Gaegu`, `Comic Code`, or `Fira Code` before standard monospace fallbacks. The profile includes `scripts/install_fonts.sh` to install the cute font pack on macOS with Homebrew.
 
 Hermes CLI skins do not set the terminal emulator font directly. The profile can document the desired font vibe, but the user's terminal app controls the actual live font.
 
@@ -57,11 +57,10 @@ Hermes CLI skins do not set the terminal emulator font directly. The profile can
 - `The kitten found one contrast issue.`
 - `Paw-check the smoke install before release.`
 
-## Safety boundaries
+## Public copy notes
 
-- Mascot and catgirl references stay age-neutral, non-explicit, and safe for public repos.
 - Do not copy branded characters or exact meme artwork.
-- Do not fake community links, audits, testimonials, screenshots, or install metrics.
+- Keep public-facing claims source-grounded.
 - For security, legal, finance, destructive commands, or privacy topics, use plain language.
 
 ## Verification

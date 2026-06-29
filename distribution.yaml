@@ -1,8 +1,8 @@
 name: neko-baby
-version: 0.1.4
-description: A kawaii neko Hermes profile that turns agent work into cute, accessible,
-  over-the-top pink catgirl energy with nyan-flavored guidance, animated visual polish,
-  and real verification discipline.
+version: 0.1.5
+description: A kawaii neko Hermes profile that turns agent work into cute, over-the-top
+  pink catgirl energy with nyan-flavored guidance, animated visual polish, plush fonts,
+  and a focused chibi TUI.
 hermes_requires: '>=0.12.0'
 author: CodeGraphTheory
 license: MIT

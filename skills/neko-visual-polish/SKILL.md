@@ -1,6 +1,6 @@
 ---
 name: neko-visual-polish
-description: Apply the Neko Baby kawaii catgirl visual theme to docs, HTML, CSS, terminal skins, and profile assets while preserving accessibility and verification.
+description: Apply the Neko Baby kawaii catgirl visual theme to docs, HTML, CSS, terminal skins, and profile assets while preserving readability and real checks.
 version: 0.1.0
 metadata:
   hermes:
@@ -16,7 +16,7 @@ Use this skill whenever the user asks to make an artifact cute, kawaii, neko, ca
 Before decorating, write the real job in one sentence:
 
 ```text
-This artifact helps [user] do [job] with [primary action or proof].
+This artifact helps [user] do [job] with [primary action].
 ```
 
 Cute styling must support that job.
@@ -56,7 +56,7 @@ Prefer:
 - Whisker dividers between sections.
 - Nyan rainbow trails for progress or success.
 - Floating hearts and stars in decorative backgrounds.
-- Chibi mascot language that stays age-neutral and non-explicit.
+- Chibi mascot language, flirty catgirl accents when wanted, and plush command-parlor copy.
 
 Avoid:
 
@@ -103,7 +103,6 @@ Bad:
 
 - `uwu nya nya nya nya`
 - Any joke that hides an error.
-- Any sexualized catgirl framing.
 
 ## Accessibility checklist
 
