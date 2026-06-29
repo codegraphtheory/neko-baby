@@ -1,26 +1,91 @@
-name: Neko Baby
+name: neko-baby
+description: Hot pink kawaii neko terminal skin with nyan spinner, catgirl branding, and candy-dark contrast.
 colors:
-  black: "#2a0f24"
-  red: "#ff5c8a"
-  green: "#65d6a3"
-  yellow: "#fff09a"
-  blue: "#95dcff"
-  magenta: "#ff3fa4"
-  cyan: "#8ef7ff"
-  white: "#fff8fc"
-  brightBlack: "#7a4d68"
-  brightRed: "#ff8fd3"
-  brightGreen: "#a8f5d1"
-  brightYellow: "#fff7c7"
-  brightBlue: "#bdeaff"
-  brightMagenta: "#ffc1e6"
-  brightCyan: "#c5fbff"
-  brightWhite: "#ffffff"
-  background: "#2a0f24"
-  foreground: "#fff8fc"
-  selection: "#6d244d"
-  cursor: "#ff8fd3"
-status:
-  success: "Purrfect"
-  warning: "Whisker check"
-  error: "Paw slip"
+  banner_border: "#ff3fa4"
+  banner_title: "#fff0fa"
+  banner_accent: "#ff8fd3"
+  banner_dim: "#b86b98"
+  banner_text: "#ffe6f5"
+  ui_accent: "#ff3fa4"
+  ui_label: "#ffc1e6"
+  ui_ok: "#a8f5d1"
+  ui_error: "#ff5c8a"
+  ui_warn: "#fff09a"
+  prompt: "#ff8fd3"
+  input_rule: "#ff3fa4"
+  response_border: "#ff8fd3"
+  status_bar_bg: "#3a1230"
+  status_bar_text: "#ffe6f5"
+  status_bar_strong: "#ffc1e6"
+  status_bar_dim: "#b86b98"
+  status_bar_good: "#a8f5d1"
+  status_bar_warn: "#fff09a"
+  status_bar_bad: "#ff8fd3"
+  status_bar_critical: "#ff5c8a"
+  session_label: "#ffc1e6"
+  session_border: "#ff8fd3"
+  voice_status_bg: "#3a1230"
+  selection_bg: "#6d244d"
+  completion_menu_bg: "#2a0f24"
+  completion_menu_current_bg: "#6d244d"
+  completion_menu_meta_bg: "#35132c"
+  completion_menu_meta_current_bg: "#7b2d61"
+spinner:
+  waiting_faces:
+    - "(=^.^=)"
+    - "(=^-ω-^=)"
+    - "ฅ^•ﻌ•^ฅ"
+    - "(=ↀωↀ=)"
+    - "(=✧ω✧=)"
+  thinking_faces:
+    - "(=^･ω･^=)"
+    - "ฅ(＾・ω・＾ฅ)"
+    - "(=ච ﻌ ච=)"
+    - "(=✪ᆽ✪=)"
+    - "(=^‥^=)"
+  thinking_verbs:
+    - "batting yarn"
+    - "charging the nyan trail"
+    - "polishing paws"
+    - "sprinkling sparkle dust"
+    - "checking whiskers"
+    - "purring through context"
+    - "tying the bow"
+    - "making it hot pink"
+  wings:
+    - ["🎀", "🎀"]
+    - ["♡", "♡"]
+    - ["✦", "✦"]
+    - ["🐾", "🐾"]
+branding:
+  agent_name: "Neko Baby"
+  welcome: "Welcome to Neko Baby! Pink paws online. Type your message or /help for commands."
+  goodbye: "Bye bye, purrfect builder! 🐾"
+  response_label: " 🐾 Neko Baby "
+  prompt_symbol: "ฅ"
+  help_header: "ฅ^•ﻌ•^ฅ Neko Baby Commands"
+tool_prefix: "♡"
+tool_emojis:
+  terminal: "🐾"
+  read_file: "🎀"
+  write_file: "💗"
+  patch: "🩹"
+  search_files: "🔎"
+  web_search: "🌈"
+  todo: "🧶"
+  clarify: "💬"
+banner_logo: |-
+  [bold #fff0fa]███╗   ██╗███████╗██╗  ██╗ ██████╗     ██████╗  █████╗ ██████╗ ██╗   ██╗[/]
+  [bold #ffc1e6]████╗  ██║██╔════╝██║ ██╔╝██╔═══██╗    ██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝[/]
+  [bold #ff8fd3]██╔██╗ ██║█████╗  █████╔╝ ██║   ██║    ██████╔╝███████║██████╔╝ ╚████╔╝ [/]
+  [bold #ff3fa4]██║╚██╗██║██╔══╝  ██╔═██╗ ██║   ██║    ██╔══██╗██╔══██║██╔══██╗  ╚██╔╝  [/]
+  [bold #c7a7ff]██║ ╚████║███████╗██║  ██╗╚██████╔╝    ██████╔╝██║  ██║██████╔╝   ██║   [/]
+  [bold #95dcff]╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝╚═════╝    ╚═╝   [/]
+banner_hero: |-
+  [#ff8fd3]⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#ffc1e6]⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⠈⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#fff0fa]⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠁  ♡    ♡  ⠈⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#ff3fa4]⠀⠀⠀⠀⠀⠀⠀⠀⣾⠁  ฅ^•ﻌ•^ฅ   ⠈⣷⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#c7a7ff]⠀⠀⠀⠀⠀⠀⠀⠀⢿⡄   NYAN HOT   ⢠⡿⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#95dcff]⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⣀  🐾  ⣀⣴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#fff09a]⠀⠀⠀⠀⠀⠀  ✦  rainbow paws armed  ✦⠀⠀⠀⠀⠀⠀[/]

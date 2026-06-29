@@ -7,7 +7,7 @@ Template lineage: built from [codegraphtheory/hermes-profile-template](https://g
 ## Install
 
 ```bash
-hermes profile install github.com/codegraphtheory/neko-baby --alias
+hermes profile install github.com/codegraphtheory/neko-baby --alias --yes
 neko-baby chat
 ```
 
@@ -19,6 +19,28 @@ make validate
 hermes profile install . --name neko-baby-local --yes --force
 hermes -p neko-baby-local chat
 ```
+
+
+## If the shorthand command is missing
+
+The shorthand command is created only when the install uses `--alias`. It writes a wrapper to `~/.local/bin/neko-baby`. If `neko-baby chat` is not found, run:
+
+```bash
+hermes profile install github.com/codegraphtheory/neko-baby --alias --yes --force
+export PATH="$HOME/.local/bin:$PATH"
+neko-baby profile
+neko-baby chat
+```
+
+The profile still works without the shorthand:
+
+```bash
+hermes -p neko-baby chat
+```
+
+## Skin behavior
+
+The profile config sets `display.skin: neko-baby`, and the skin file is installed at `skins/neko-baby.yaml` inside the Hermes profile. The skin uses Hermes CLI's real skin schema: banner colors, prompt symbol, spinner faces, response label, status bar colors, tool prefix, tool emojis, and banner art. It cannot force your terminal app's window background color, but the Hermes banner, prompt, status bar, spinner, response box, and command UI should be visibly pink neko themed.
 
 ## What it is
 

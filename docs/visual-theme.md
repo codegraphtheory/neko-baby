@@ -76,3 +76,17 @@ for name, ok in checks.items():
 raise SystemExit(0 if all(checks.values()) else 1)
 PY
 ```
+
+
+## Hermes CLI skin mapping
+
+The actual terminal skin lives at `skins/neko-baby.yaml` and uses Hermes CLI skin keys, not generic terminal color keys. Important fields:
+
+- `colors.banner_border`, `banner_title`, `banner_accent`, `banner_text`, and `banner_dim` for startup panels.
+- `colors.prompt`, `input_rule`, and `response_border` for the main conversation frame.
+- `colors.status_bar_*`, `completion_menu_*`, and `selection_bg` for TUI surfaces.
+- `branding.agent_name`, `welcome`, `goodbye`, `response_label`, `prompt_symbol`, and `help_header` for visible copy.
+- `spinner.waiting_faces`, `thinking_faces`, `thinking_verbs`, and `wings` for nyan motion in the CLI.
+- `banner_logo` and `banner_hero` for the biggest first-impression theme hit.
+
+A profile-local skin works when Hermes is launched through that profile because `get_hermes_home()` resolves to `~/.hermes/profiles/<name>/`, and the skin engine reads `<profile>/skins/<skin>.yaml`.

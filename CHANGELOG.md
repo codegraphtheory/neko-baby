@@ -2,6 +2,12 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.1
+
+- Rebuilt `skins/neko-baby.yaml` with the real Hermes CLI skin schema so the installed profile visibly changes banner, prompt, spinner, status bar, response label, and tool styling.
+- Updated install docs to use `--alias --yes` and added shorthand-command troubleshooting.
+- Strengthened the smoke install to verify alias creation and active skin loading in an isolated Hermes home.
+
 ## 0.1.0
 
 - Initial Neko Baby profile distribution generated from codegraphtheory/hermes-profile-template.
