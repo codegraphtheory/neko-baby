@@ -72,7 +72,7 @@ from agent.pet import store
 from agent.pet.render import PetRenderer
 pet = store.resolve_active_pet('neko-baby')
 assert pet is not None and pet.exists, pet
-renderer = PetRenderer(str(pet.spritesheet), mode='unicode', scale=0.62, unicode_cols=24)
+renderer = PetRenderer(str(pet.spritesheet), mode='unicode', scale=0.46, unicode_cols=18)
 assert renderer.frame_count('idle') >= 1
 assert renderer.frame_count('run') >= 1
 init_skin_from_config(cfg)
@@ -83,7 +83,7 @@ assert skin.get_branding('prompt_symbol') == '♡ฅ'
 assert skin.get_color('banner_border') == '#ff4fb8'
 assert skin.banner_logo and skin.banner_hero
 assert 'strawberry milk' in skin.banner_logo
-assert 'pink paws' in skin.banner_hero
+assert 'pink paws' in skin.banner_logo
 print('Skin activation smoke passed: neko-baby')
 PY
 

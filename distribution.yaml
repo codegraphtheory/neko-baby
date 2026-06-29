@@ -1,5 +1,5 @@
 name: neko-baby
-version: 0.1.8
+version: 0.1.9
 description: A kawaii neko Hermes profile that turns agent work into cute, over-the-top
   pink catgirl energy with nyan-flavored guidance, animated visual polish, plush fonts,
   and a focused chibi TUI.
@@ -32,3 +32,5 @@ distribution_owned:
 - demo/
 - skins/
 - pets/
+- demos/
+- assets/

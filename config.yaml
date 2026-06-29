@@ -25,8 +25,8 @@ display:
   pet:
     enabled: true
     slug: neko-baby
-    scale: 0.62
-    unicode_cols: 24
+    scale: 0.46
+    unicode_cols: 18
     render_mode: auto
 memory:
   memory_enabled: true

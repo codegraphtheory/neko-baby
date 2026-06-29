@@ -89,7 +89,7 @@ PY
 
 ## Focused TUI layout
 
-The installed profile enables `display.pet` with the bundled `neko-baby` pet. Hermes renders this as a live half-block sprite above the prompt in the CLI TUI. Use this as the supported profile-level reflow: the mascot pane provides a focused catgirl workbench without patching Hermes core.
+The installed profile enables `display.pet` with the bundled `neko-baby` pet. Hermes renders this as a compact live half-block sprite above the prompt in the CLI TUI. Use this as the supported profile-level reflow: the mascot pane provides a focused catgirl workbench without patching Hermes core. Keep `scale` and `unicode_cols` conservative so the opening view fits common terminal heights.
 
 Pet states map to work states:
 

@@ -83,20 +83,12 @@ tool_emojis:
   skill_view: "📖"
   skill_manage: "🎁"
 banner_logo: |-
-  [bold #fff7fd]  ♡       ♡       ♡       ♡       ♡       ♡       ♡       ♡[/]
-  [bold #ffd1ef]███╗   ██╗███████╗██╗  ██╗ ██████╗     ██████╗  █████╗ ██████╗ ██╗   ██╗[/]
-  [bold #ffb3e6]████╗  ██║██╔════╝██║ ██╔╝██╔═══██╗    ██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝[/]
-  [bold #ff8fd3]██╔██╗ ██║█████╗  █████╔╝ ██║   ██║    ██████╔╝███████║██████╔╝ ╚████╔╝ [/]
-  [bold #ff4fb8]██║╚██╗██║██╔══╝  ██╔═██╗ ██║   ██║    ██╔══██╗██╔══██║██╔══██╗  ╚██╔╝  [/]
-  [bold #c7a7ff]██║ ╚████║███████╗██║  ██╗╚██████╔╝    ██████╔╝██║  ██║██████╔╝   ██║   [/]
-  [bold #95dcff]╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝╚═════╝    ╚═╝   [/]
-  [bold #fff3a6]  ✦ strawberry milk terminal magic  ✦  nyan sparkle mode  ✦[/]
+  [bold #fff7fd]   ♡  🎀  ♡   NEKO BABY   ♡  🐾  ♡[/]
+  [bold #ffb3e6]   /\_/\   strawberry milk terminal magic   /\_/\[/]
+  [bold #ff4fb8]  ( o.o )   pink paws online, bows charged   ( o.o )[/]
+  [bold #fff3a6]    > ♡ <      nyan sparkle command parlor     > ♡ <[/]
 banner_hero: |-
-  [#ffb3e6]          🎀        ♡ฅ^•ﻌ•^ฅ♡        🎀          [/]
-  [#ffd1ef]     ╭────────────────────────────────────────╮     [/]
-  [#fff7fd]     │   /\_/\      NEKO BABY      /\_/\    │     [/]
-  [#ff8fd3]     │  ( o.o )   pink paws online  ( o.o )   │     [/]
-  [#ff4fb8]     │   > ♡ <    purrfect checks    > ♡ <    │     [/]
-  [#c7a7ff]     │  ✦ bows ✦ hearts ✦ nyan trails ✦       │     [/]
-  [#95dcff]     ╰────────────────────────────────────────╯     [/]
-  [#fff3a6]       🌈  sugar sparkles online, bows fully charged  🌈       [/]
+  [#ffd1ef]╭────────────────────────────────────────────╮[/]
+  [#fff7fd]│  compact chibi TUI  ✦  Comic Mono launcher │[/]
+  [#ff8fd3]│  ♡ฅ prompt  ✦  neko pet  ✦  candy tools   │[/]
+  [#ffd1ef]╰────────────────────────────────────────────╯[/]

@@ -2,6 +2,11 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.9
+
+- Shortened the opening banner and reduced the pet pane size so the initial Neko Baby view fits common terminal screens.
+- Added a VHS terminal demo tape plus generated GIF showcasing the compact banner, Comic Mono launcher, pet pane, spinner flavor, tool labels, and neko prompt.
+
 ## 0.1.8
 
 - Added a profile-specific `neko-baby` launcher that applies Comic Mono only while the Neko Baby profile is running, then restores the previous Terminal.app font.

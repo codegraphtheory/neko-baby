@@ -48,9 +48,23 @@ Neko Baby defaults to OpenAI Codex via Hermes provider `openai-codex` with model
 
 This profile intentionally runs at Level 3 kawaii: candy gradients, chibi neko mascot energy, bow and heart copy, paw-check language, nyan spinner phrases, pink terminal chrome, and a self-contained animated demo. Cute is allowed to be loud here: bows, hearts, plush mascot motion, and pink terminal chrome are the point.
 
+## Terminal demo
+
+A VHS-recorded terminal demo is available at:
+
+```text
+assets/demos/neko-baby-terminal-demo.gif
+```
+
+Regenerate it with:
+
+```bash
+vhs demos/vhs/neko-baby-terminal-demo.tape
+```
+
 ## Focused catgirl TUI
 
-Neko Baby now ships a profile-local Petdex mascot at `pets/neko-baby/` and enables it through `display.pet`. In the Hermes CLI this reflows the bottom TUI into a focused catgirl view: a live pink chibi neko sprite sits above the prompt, reacts while the agent thinks, waits, reviews, succeeds, or fails, and keeps the main input area visually anchored to the Neko Baby theme instead of a stock Hermes prompt.
+Neko Baby now ships a profile-local Petdex mascot at `pets/neko-baby/` and enables it through `display.pet`. In the Hermes CLI this reflows the bottom TUI into a focused catgirl view: a compact live pink chibi neko sprite sits above the prompt, reacts while the agent thinks, waits, reviews, succeeds, or fails, and keeps the main input area visually anchored to the Neko Baby theme instead of a stock Hermes prompt.
 
 The profile still uses standard Hermes runtime code for compatibility. Arbitrary panes and full custom terminal layouts require Hermes core support, but this profile uses the supported profile-local skin and pet surfaces so installs remain portable.
 
