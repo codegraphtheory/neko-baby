@@ -9,6 +9,9 @@ Set Framerate 30
 Set PlaybackSpeed 1.0
 Set Theme "Catppuccin Mocha"
 
-Type "python3 scripts/demo_terminal_showcase.py"
+Type "stty cols 79; NEKO_BABY_RESTORE_FONT=0 neko-baby chat"
 Enter
-Sleep 9s
+Sleep 7s
+Type "/exit"
+Enter
+Sleep 1s

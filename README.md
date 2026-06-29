@@ -56,6 +56,8 @@ A VHS-recorded terminal demo is available at:
 assets/demos/neko-baby-terminal-demo.gif
 ```
 
+The recording is a live `neko-baby chat` startup, not a scripted mock. It shows the actual compact Hermes banner, welcome copy, live pet pane, status bar, and prompt.
+
 Regenerate it with:
 
 ```bash
@@ -101,7 +103,7 @@ docs/profile-prompt.md
 
 ## Font stack
 
-The web demo asks for a much cuter stack first: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are missing, it falls back to Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Run `scripts/install_fonts.sh` after install to add the cute font pack on macOS with Homebrew. To make the live macOS Terminal.app tab visibly cute without breaking terminal columns, run `scripts/install_launcher.sh`. It replaces only the `neko-baby` launcher with a profile-specific wrapper that switches the active tab to `Comic Mono` at 14pt while Neko Baby runs, then restores your previous Terminal.app font on exit. Other Hermes profiles and normal terminal sessions keep their own font. Hermes skins color and label the TUI, but Terminal.app owns the actual glyph font.
+The web demo asks for a much cuter stack first: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, and `SF Pro Rounded`. If those fonts are missing, it falls back to Inter, ui-rounded, ui-sans-serif, system-ui, and sans-serif. Run `scripts/install_fonts.sh` after install to add the cute font pack on macOS with Homebrew. To make the live macOS Terminal.app tab visibly cute without breaking terminal columns, run `scripts/install_launcher.sh`. It replaces only the `neko-baby` launcher with a profile-specific wrapper that switches the active tab to `Comic Mono` at 14pt and forces a 79-column compact live view while Neko Baby runs, then restores your previous Terminal.app font and terminal size on exit. Other Hermes profiles and normal terminal sessions keep their own font and width. Hermes skins color and label the TUI, but Terminal.app owns the actual glyph font.
 
 ## Terminal font troubleshooting
 
@@ -123,7 +125,7 @@ Then start Neko Baby normally:
 neko-baby chat
 ```
 
-The launcher applies `Comic Mono` only for the `neko-baby` process and restores the previous Terminal.app font when that process exits.
+The launcher applies `Comic Mono` and a compact 79-column live view only for the `neko-baby` process, then restores the previous Terminal.app font and terminal size when that process exits.
 
 Want a bolder headline-style font anyway? Use:
 

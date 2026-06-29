@@ -5,11 +5,14 @@ profile="neko-baby"
 font_name="${NEKO_BABY_TERMINAL_FONT:-Comic Mono}"
 font_size="${NEKO_BABY_TERMINAL_FONT_SIZE:-14}"
 restore_font="${NEKO_BABY_RESTORE_FONT:-1}"
+compact_cols="${NEKO_BABY_COMPACT_COLS:-79}"
 hermes_bin="${HERMES_BIN:-$(command -v hermes)}"
 
 orig_font=""
 orig_size=""
 font_applied="0"
+orig_stty_size=""
+stty_applied="0"
 
 terminal_get() {
   osascript -e 'tell application "Terminal" to if (count of windows) > 0 then get font name of selected tab of front window' 2>/dev/null || true
@@ -32,18 +35,31 @@ end tell
 OSA
 }
 
-restore_terminal_font() {
+restore_terminal_view() {
+  if [ "$stty_applied" = "1" ] && [ -n "$orig_stty_size" ]; then
+    set -- $orig_stty_size
+    if [ $# -ge 2 ]; then
+      stty rows "$1" cols "$2" 2>/dev/null || true
+    fi
+  fi
   if [ "$font_applied" = "1" ] && [ "$restore_font" != "0" ] && [ -n "$orig_font" ] && [ -n "$orig_size" ]; then
     terminal_set "$orig_font" "$orig_size"
   fi
 }
+
+if [ -t 0 ]; then
+  orig_stty_size="$(stty size 2>/dev/null || true)"
+  if [ -n "$compact_cols" ] && [ "$compact_cols" != "0" ]; then
+    stty cols "$compact_cols" 2>/dev/null && stty_applied="1" || true
+  fi
+fi
 
 if [ "$(uname -s)" = "Darwin" ] && osascript -e 'id of application "Terminal"' >/dev/null 2>&1; then
   orig_font="$(terminal_get)"
   orig_size="$(terminal_size)"
   terminal_set "$font_name" "$font_size"
   font_applied="1"
-  trap restore_terminal_font EXIT INT TERM
 fi
 
+trap restore_terminal_view EXIT INT TERM
 "$hermes_bin" -p "$profile" "$@"

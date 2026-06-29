@@ -2,6 +2,12 @@
 
 All notable changes to this Hermes profile distribution are documented here.
 
+## 0.1.10
+
+- Updated the profile launcher to force a scoped 79-column compact live view so the actual pet pane appears in the opening screen.
+- Regenerated the VHS demo from a real `neko-baby chat` startup instead of the scripted showcase.
+- Added a live tmux smoke script that verifies the compact banner, live pet glyphs, Neko prompt, and welcome copy.
+
 ## 0.1.9
 
 - Shortened the opening banner and reduced the pet pane size so the initial Neko Baby view fits common terminal screens.

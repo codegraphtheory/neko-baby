@@ -30,7 +30,7 @@ Level 3: full theme. Use obvious bows, paw pads, hearts, strawberry-milk pink, c
 
 Use a very cute rounded display stack for browser artifacts: `Cherry Bomb One`, `Sniglet`, `Gaegu`, `Delius`, `Comic Neue`, `Baloo 2`, `Nunito`, `SF Pro Rounded`, then the fallback stack `Inter`, `ui-rounded`, `ui-sans-serif`, `system-ui`, `sans-serif`. For terminal previews, try `Comic Neue`, `Gaegu`, `Comic Code`, or `Fira Code` before standard monospace fallbacks. The profile includes `scripts/install_fonts.sh` to install the cute font pack on macOS with Homebrew.
 
-Hermes CLI skins do not set the terminal emulator font directly. The profile ships `scripts/install_launcher.sh` and `scripts/neko-baby` for macOS Terminal.app. The launcher applies `Comic Mono` only while the `neko-baby` profile is running, then restores the previous Terminal.app font. Comic Mono is monospaced, so terminal columns stay aligned. Other terminal emulators still need manual font selection.
+Hermes CLI skins do not set the terminal emulator font directly. The profile ships `scripts/install_launcher.sh` and `scripts/neko-baby` for macOS Terminal.app. The launcher applies `Comic Mono` and a 79-column compact live view only while the `neko-baby` profile is running, then restores the previous Terminal.app font and terminal size. Comic Mono is monospaced, so terminal columns stay aligned and the pet pane appears in the initial live view. Other terminal emulators still need manual font selection.
 
 ## Motifs
 
